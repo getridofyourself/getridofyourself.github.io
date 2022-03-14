@@ -7,6 +7,10 @@
     <title>Resources</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        #main {
+            margin-left: 25%;
+            margin-right: 25%;
+        }
         #img1 {
             width: 100%;
             max-width: 300px;
@@ -14,18 +18,26 @@
             margin-top: 50px;
             float: right;
         }
-    </style>
+        @media only screen and (max-width : 480px) {
+            #main {
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+        }
+        </style>
 </head>
 <body>
     <h1>Resources</h1>
-    <h2>Tiqqun</h2>
-    <div><a href="assets/Tiqqun - Introduction to Civil War.pdf">Introduction to Civil War</a></div>
-    <div><a href="assets/Tiqqun - This Is Not a Program.pdf">This Is Not a Program</a></div>
-    <div><a href="assets/Tiqqun - The Cybernetic Hypothesis.pdf">The Cybernetic Hypothesis</a></div>
-    <h2>The Invisible Committee</h2>
-    <div><a href="assets/The Invisible Committee - The Coming Insurrection.pdf">The Coming Insurrection</a></div>
-    <div><a href="assets/The Invisible Committee - To Our Friends.pdf">To Our Friends</a></div>
-    <div><a href="assets/The Invisible Committee - Now.pdf">Now</a></div>
-    <img id="img1" src="assets/1.jpg">
+    <div id="main">
+        <h2>Tiqqun</h2>
+        <div><a href="assets/Tiqqun - Introduction to Civil War.pdf">Introduction to Civil War</a></div>
+        <div><a href="assets/Tiqqun - This Is Not a Program.pdf">This Is Not a Program</a></div>
+        <div><a href="assets/Tiqqun - The Cybernetic Hypothesis.pdf">The Cybernetic Hypothesis</a></div>
+        <h2>The Invisible Committee</h2>
+        <div><a href="assets/The Invisible Committee - The Coming Insurrection.pdf">The Coming Insurrection</a></div>
+        <div><a href="assets/The Invisible Committee - To Our Friends.pdf">To Our Friends</a></div>
+        <div><a href="assets/The Invisible Committee - Now.pdf">Now</a></div>
+        <img id="img1" src="assets/1.jpg">
+    </div>
 </body>
 </html>
