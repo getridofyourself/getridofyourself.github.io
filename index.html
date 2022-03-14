@@ -5,20 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Rid of Yourself</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        h1 {
-            font-family: 'Garamond', serif;
-            text-align: center;
-            font-size: 3.5em;
-            color: black;
-        }
-        #iframe-container {
+        #video-div {
             position: relative;
             margin: auto;
             width: 70%;
             padding-top: 39.375%;
         }
-        iframe {
+        #video {
             position: absolute;
             top: 0;
             bottom: 0;
@@ -27,13 +22,25 @@
             width: 100%;
             height: 100%;
         }
-        body {
-            background-color: #fafafa;
+        #read-more-div {
+            text-align: center;
+            margin-top: 10px;
+        }
+        #read-more {
+            font-size: 1.25em;
+        }
+        /* smartphone styles */
+        @media only screen and (max-width : 480px) {
+            #video-div {
+                width: 100%;
+                padding-top: 56.25%;
+            }
         }
     </style>
 </head>
 <body>
     <h1>Get Rid of Yourself</h1>
-    <div id="iframe-container"><iframe src="https://www.youtube.com/embed/CyMUt8cBRsg" allow="fullscreen"></iframe></div>
+    <div id="video-div"><iframe id="video" src="https://www.youtube.com/embed/CyMUt8cBRsg" allow="fullscreen"></iframe></div>
+    <div id="read-more-div"><a id="read-more" href="resources.html">read more</a></div>
 </body>
 </html>
