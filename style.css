@@ -1,18 +1,29 @@
+* {
+    color: black;
+    font-family: 'Garamond', serif;
+}
 body {
     background-color: #fafafa;
 }
-h1 {
+
+.title {
     text-align: center;
     font-size: 3.5em;
 }
-h1, h2, p, li, body {
-    color: black;
-}
-* {
-    font-family: 'Garamond', serif;
-}
-#nav {
+
+.nav {
     text-align: center;
     margin-top: -25px;
     font-size: 1.25em;
+}
+.nav > a {
+    text-decoration: none;
+}
+
+.dash-list {
+    list-style: none;
+    padding-left: 0;
+}
+.dash-list > li::before {
+    content: "- ";
 }
