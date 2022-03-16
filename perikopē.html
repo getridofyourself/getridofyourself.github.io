@@ -1,0 +1,48 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perikopē</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .quote {
+            margin-bottom: 50px;
+        }
+        #quotes {
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        @media only screen and (max-width : 480px) {
+            #quotes {
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+        }
+        .odd-quote {
+            text-align: left;
+        }
+        .even-quote {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Perikopē</h1>
+    <div class="nav">
+        <a href="index.html">(home)</a> <a href="resources.html">(resources)</a>
+    </div>
+    <div id="quotes">
+        {% for quote in site.data.quotes %}
+        <div class="quote {% cycle 'odd-quote', 'even-quote' %}">
+            <p>"{{ quote.content }}"</p>
+            <p>—{{ quote.author }}, <i>{{ quote.source}}</i></p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
